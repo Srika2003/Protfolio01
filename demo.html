@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .primary01 {
+            position: relative;
+            top: 1000px;
+            border: 1px solid black;
+            width: 150px;
+            height: 250px;
+            display: block;
+            margin-bottom: 700px;
+        }
+
+        .primary02 {
+            position: relative;
+            top: 1000px;
+            border: 1px solid black;
+            width: 150px;
+            height: 250px;
+            display: block;
+            margin-bottom: 800px;
+        }
+
+        .primary03 {
+            position: relative;
+            top: 1000px;
+            border: 1px solid black;
+            width: 150px;
+            height: 250px;
+            display: block;
+            margin-left: 300px;
+        }
+
+        i {
+            position: relative;
+            bottom: 5em;
+            left: 10px;
+            font-weight: 700;
+        }
+
+        img {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            top: 25px;
+        }
+
+        .hero {
+            height: 100vh;
+            width: 100%;
+            /* background-image: url(images/Untitled\ design.png); */
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 2;
+            background-position: center;
+
+        }
+
+        nav ul li {
+            list-style-type: none;
+            /*   important */
+            display: inline-block;
+            padding: 10px 25px;
+
+        }
+
+        nav ul li a {
+            color: rgb(16, 16, 16);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+
+        }
+
+        nav ul li a:hover {
+            color: #f9004d;
+            transition: .4s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span> </h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li  id="icon"><a href="#div1">About Us</a></li>
+                <li  id="icon2"><a href="#div2">Service</a></li>
+                <li  id="icon3"><a href="#div3">Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="primary01" id="div1">
+
+                <img src="images/brown_shirt_Sri.png" alt="">
+                <i class='bx bx-x'></i>
+                <h1>Hi Srikanth</h1>
+                <p>Welcome to Livewire</p>
+            </div>
+            <div class="primary02" id="div2">
+
+                <img src="images/sri-HD.png" alt="">
+                <i class='bx bx-x' ></i>
+                <h1>Hi hari</h1>
+                <p>Welcome to python center</p>
+            </div>
+            <div class="primary03" id="div3">
+
+                <img src="images/Screenshot 2024-04-17 141711.png" alt="">
+                <i class='bx bx-x'></i>
+                <h1>Hi ramkumar</h1>
+                <p>Welcome to cadd center</p>
+            </div>
+            <script>
+                console.log("Hi sri")
+                // Function to toggle visibility and apply transition
+                function toggleVisibility(elementId) {
+                    let element = document.getElementById(elementId);
+                    
+                    element.style.transition = '6s ease-in-out'; // Apply transition
+                    console.log("Hi sri");
+                   
+                }
+            
+                // Add event listeners to each icon
+                document.getElementById("icon").addEventListener('click', function () {
+                    toggleVisibility('div1');
+                });
+            
+                document.getElementById("icon2").addEventListener('click', function () {
+                    toggleVisibility('div2');
+                });
+            
+                document.getElementById("icon3").addEventListener('click', function () {
+                    toggleVisibility('div3');
+                });
+            </script>
+            
+</body>
+
+</html>
